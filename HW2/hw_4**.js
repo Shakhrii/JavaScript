@@ -6,6 +6,7 @@ e.g. function isPalindrom(word)
 function reverse(s) {
     return s.split("").reverse().join("");
 }
+
 // проверяет является ли слово палиндромом
 function isPalindrom(text) {
     //проверяем является ли аргумент text строковым
@@ -15,10 +16,11 @@ function isPalindrom(text) {
     } 
 
     //сравниваем исходную строку с реверсивной 
-    let res = (text).localeCompare(reverse(text), undefined, { sensitivity: 'base' })
-    if (res == 0) {
+    let result = (text).localeCompare(reverse(text), undefined, { sensitivity: 'base' })
+    //если строки равны
+    if (result == 0) {
         console.log("Это палиндром")
-    } else {
+    } else { //если не равны
         console.log("Это не палиндром")
     } 
 }
