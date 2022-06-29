@@ -39,3 +39,4 @@ if (age_1 < age_2) {
     console.log("Technical work")
 }
  
+    

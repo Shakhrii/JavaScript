@@ -5,6 +5,6 @@
         "command": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
     },
     "args": [
-        "index.html"
+        "HW1/index.html"
     ]
 }

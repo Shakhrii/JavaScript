@@ -14,7 +14,7 @@ function check_age(age_1) {
                 return "Wrong Type"
             }
         }
-    } */
+    }  */
 
     let age_2 = 18
     let age_3 = 60 
