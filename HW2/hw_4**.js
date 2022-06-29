@@ -16,9 +16,7 @@ function isPalindrom(text) {
     } 
 
     //сравниваем исходную строку с реверсивной 
-    let result = (text).localeCompare(reverse(text), undefined, { sensitivity: 'base' })
-    //если строки равны
-    if (result == 0) {
+    if (text.toLowerCase() === reverse(text).toLowerCase()) {
         console.log("Это палиндром")
     } else { //если не равны
         console.log("Это не палиндром")
