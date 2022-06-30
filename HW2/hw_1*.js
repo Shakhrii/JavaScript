@@ -6,3 +6,5 @@ function calculateDegree(degree) {
         console.log("2^" + i + " = " + Math.pow(2,i))
     }
 }
+
+calculateDegree(20)
