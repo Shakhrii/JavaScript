@@ -91,7 +91,7 @@ function findUsers(users) {
     const reqUsers = users.filter(user => {
         return user.registrationDate == curDate1 || 
         user.registrationDate == curDate2;
-    }).map(function (user) {
+    }).map(function (user) { // возвращает массив из полей user.firstName
         return user.firstName;
       });
 

@@ -1,3 +1,10 @@
+/* Откройте в VSCode task2.json файл. Скопируйте из него JSONку, 
+вставьте в свой код (присвоив в переменную).
+
+Дан массив объектов. Каждый объект является идентификационной 
+карточкой человека. Нам нужно хранить только уникальные значения 
+в этом массиве. Реализуйте функцию, которая будет выполнять эту работу. */
+
 const users = [{
     "name": "Leanne Graham",
     "username": "Bret",
@@ -352,20 +359,26 @@ const users = [{
 }
 ]
 
+//удаление дубликатов в массиве объектов
 function removeDuplicates(users) {
     let uniqueUsers = []
     let stringArr = []
   
+    //проходит по массиву и возвращает элементы, удовлетворяющие условию
     uniqueUsers = users.filter(user => {
+        // конвертируем в строку для удобного сравнения элементов
         const userStr = JSON.stringify(user)
+        //проверяем существование этого элемента в массиве элементов-строк
         if (!stringArr.includes(userStr)) {
+            //если не существует - добавляем
             stringArr.push(userStr)
 
-            return true
+            return true // добавляет в новый массив текущий элемент
         }
-        return false
+        return false //не добавляет элемент
     })
-    console.log(uniqueUsers)
+    return uniqueUsers
 }
 
-removeDuplicates(users)
+let uniqueUsers = removeDuplicates(users)
+console.log(uniqueUsers)
