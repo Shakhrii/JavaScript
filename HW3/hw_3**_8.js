@@ -81,5 +81,5 @@ function deleteDepartment(id) {
     })
   }
   
-  deleteDepartment(10)
+  deleteDepartment(10)  
   showArray(enterprises)

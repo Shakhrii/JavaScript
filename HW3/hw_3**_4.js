@@ -100,5 +100,5 @@ function showArray(array) {
     })
 }
 
-  addDepartment(1, "Отдел проектирования")
+  addDepartment(1, "Отдел проектирования") 
   showArray(enterprises)
