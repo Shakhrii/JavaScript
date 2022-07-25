@@ -75,20 +75,6 @@ function editEnterpriseName(id, newName) {
       console.log(item)
     })
   }
-  // функция для получения последнего id в списке
-  function getLastId() {
-    let lastItem = enterprises[enterprises.length -1]
-    let departments = lastItem.departments
-    let lastId
-    
-    if (departments.length > 0) {
-      lastId = departments[departments.length - 1].id
-    } else {
-      lastId = lastItem.id
-    }
-    return lastId
-  }
-  
-  
+
   editEnterpriseName(5, "Новое название")
   showArray(enterprises)

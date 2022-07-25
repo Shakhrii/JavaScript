@@ -72,13 +72,15 @@ function addEnterprise(name) {
 
 // функция, которая возвращает последний id в списке
 function getLastId() {
+    //последний элемент массива
     let lastItem = enterprises[enterprises.length -1]
     let departments = lastItem.departments
     let lastId
     
+    // если есть отделы, то достаем id из последнего отдела
     if (departments.length > 0) {
       lastId = departments[departments.length - 1].id
-    } else {
+    } else { // если отделов нет, то берем id предприятия
       lastId = lastItem.id
     }
     return lastId

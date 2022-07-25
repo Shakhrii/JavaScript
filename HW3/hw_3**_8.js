@@ -66,8 +66,9 @@ function deleteDepartment(id) {
       let departments = enterprises[enterpriseKey].departments
       for (let departmentKey in departments) {
         let department = departments[departmentKey]
+        // если id текущего отдела совпадает с искомым, и если в отделе нет сотрудников
         if (department.id == id && department.employees_count == 0) {
-          departments.splice(departmentKey, 1)
+          departments.splice(departmentKey, 1) // удаляем элемент из массива
           return
         }
       }
@@ -81,5 +82,7 @@ function deleteDepartment(id) {
     })
   }
   
-  deleteDepartment(10)  
+  deleteDepartment(3) 
+  deleteDepartment(10)
+  
   showArray(enterprises)

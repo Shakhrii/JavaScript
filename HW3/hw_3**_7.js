@@ -76,6 +76,6 @@ function deleteEnterprise(id) {
     })
   }
   
-  deleteEnterprise(9)
+  deleteEnterprise(1)
   showArray(enterprises)
   
